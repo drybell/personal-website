@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!-- NEED TO MAKE IOS COMPATIBLE -->
+<!-- SOME FORMATTING IS STILL OFF -->
+
+<html>
+    <head>
+        <title> danielryaboshapka.com </title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+
+        <div class="top-bar">
+            <h3> danielryaboshapka.com </h3>
+            <!-- NEED TO SHOW WHERE USER CURRENTLY IS LOCATED ON TOP BAR AS WELL-->
+        </div>
+
+        <div class="bio">
+            <div class="hidden">
+                <header>
+                    <h2>Daniel Ryaboshapka</h2>
+                    <h3>Sophomore studying Mechanical Engineering and Computer Science at Tufts University </h3>
+                </header>
+            </div>
+        </div>
+
+        <div class="tabs"> 
+            <nav>
+                <ul class="child">
+                    <li><a href="index.html" class="selected">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="music.html">My Music</a></li>
+                    <li><a href="photos.html">My Photos</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container">
+            <h2>Welcome!</h2>
+            <h1>Intro:</h1>
+            <div class="textbox">
+                <i>Welcome to my personal website! On this page you will find information about myself and some projects that 
+                    I have listed. Feel free to look around, I hope to introduce some more pages in the future.
+                </i>
+            </div>
+            <h1>Bio:</h1>
+            <div class="textbox">
+                <i> WORK IN PROGRESS </i>
+            </div>
+               
+            <h1>Projects:</h1>
+            <div class="textbox">
+                <i>Here are some of my current projects under development with links to 
+                    their respective GitHub pages. Click on a project image to head over to the 
+                    GitHub page. Most projects are at an alpha-level development stage and will 
+                    see updates throughout the year. A list of my favorite projects during my 
+                    studies at Lakeside High School along with a link to my main GitHub page (drybell)
+                    can be found below.</i>
+            </div>
+
+            <!-- DON'T FORGET JAVASCRIPT FOR PERCENTAGES OF PROGRESS BARS -->
+            <!-- AS WELL AS BUTTONS FOR GIT PAGES EMBEDDED WITHIN THE CONTAINERS -->
+            <div class="project-wrapper">
+                    <div class="project-board">
+                        <div id="block1" class="project-block">
+                            <div class="project-header">
+                                <h1>Project 1: AirTracker</h1>
+                                <a class="project-link" href="#">Go to GitHub</a>
+                            </div>
+                            <p>Description:  AirTracker's ultimate goal is to provide a simple, user-friendly 
+                                experience for tracking planes. It's current functionality is a text-based program
+                                that allows tracking planes through its callsign, listing all current planes flying over
+                                a given country, as well as what country planes are coming from. The next step is learning
+                                Processing or OpenGL to add graphics to this program.
+                            </p>
+                            <h4>Progress:</h4>
+                            <div class="progress-bar">
+                                <div id="prog1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-board">
+                        <div id="block2" class="project-block">  <!--REMEMBER TO FIX URLS  -->
+                            <div class="project-header">
+                            <h1>Project 2: Coding Interview Problems</h1>
+                            <a class="project-link" href="#">Go to GitHub</a>
+                            </div>
+                            <p>Description: This project will involve solving a coding interview problem once a week 
+                                and posting the solution code to GitHub. I will be using problems from "Cracking the Coding Interview"
+                                by McDowell as well as the Project Euler Problems as references. 
+                            </p>
+                            <h4>Progress:</h4>
+                            <div class="progress-bar">
+                                <div id="prog2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-board">
+                        <div id="block3" class="project-block">
+                            <div class="project-header">
+                                <h1>Project 3: AIR Lab Research</h1>
+                                <a class="project-link" href="#">Go to GitHub</a>
+                            </div>
+                            <p>Description: I will be working under Professor Jivko Sinapov in the Autonomous Intelligence
+                                Robotics Lab this semester. My current project will be creating 
+                                a framework for two UR robot arms that allows any new user to build projects more efficiently.
+                            </p>
+                            <h4>Progress:</h4>
+                            <div class="progress-bar">
+                                <div id="prog3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-board">
+                        <div id="block4" class="project-block">
+                            <div class="project-header">
+                                <h1>Project 4: Full Speaker Build</h1>
+                                <a id="page"class="project-link" href="#">Go to Page</a>
+                            </div>
+                            <p>Description: I have written the product sheet and begun designing a 12" sub, 10" full-range 
+                                2-way speaker driver set along with the cabinet. Next steps are to design the circuit as well
+                                as fully plan out my cabinet design. More info on this project will appear under my "Blog" tab.
+                            </p>
+                            <h4>Progress:</h4>
+                            <div class="progress-bar">
+                                <div id="prog4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-board">
+                        <div id="block5" class="project-block">
+                            <div class="project-header">
+                                <h1>Project 5: This Website! </h1>
+                                <a class="project-link" href="#">Go to GitHub</a>
+                            </div>
+                            <p>Description: This website is a project! I had a really bad template for my first website 
+                                and I decided that it was time to make my own website from scratch. At the time that I am writing
+                                this block, I have successfully written my home page with HTML and CSS, but need to learn some 
+                                JavaScript for some animations to make the page have a little more substance. 
+                            </p>
+                            <h4>Progress:</h4>
+                            <div class="progress-bar">
+                                <div id="prog5"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+             
+        </div>
+
+    </body>
+</html>

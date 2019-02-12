@@ -1,0 +1,19 @@
+/*
+* Daniel Ryaboshapka
+* February 9th 2019
+* animations.scss
+* Page animations using keyframes following css-tricks.com
+* source: https://css-tricks.com/add-page-transitions-css-smoothstate-js/
+*/
+
+.start .basic {
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+  .start .basic--slidedown {
+    animation-name: slideDown;
+  }
+  .start .basic--slideup {
+    animation-name: slideUp;
+  }

@@ -1,0 +1,86 @@
+/*
+* Daniel Ryaboshapka
+* February 9th 2019
+* animations.scss
+* Page animations using keyframes following css-tricks.com
+* source: https://css-tricks.com/add-page-transitions-css-smoothstate-js/
+*/
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-75%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes containerSlide {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,10px,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(4%,5px,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.start .basic {
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.start .slow {
+    animation-duration: 1.4s;
+    animation-delay: .5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.start .medium{
+    animation-duration: 1.25s;
+    animation-delay: .25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.start .basic--fadein {
+    animation-name: fadeIn;
+}
+
+.start .basic--slidedown {
+    animation-name: slideDown;
+}
+
+.start .basic--slideleft {
+    animation-name: slideLeft;
+}
+
+.start .basic--containerslide{
+    animation-name: containerSlide;
+}
